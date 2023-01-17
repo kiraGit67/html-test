@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: red;
+  font-size: 32px;
+  font-weight: 400;
+  _margin-top: 0;
+  _margin-bottom: 10px;
+  _margin: 0 10px 10px 0;
+  _margin: 25px 10px;
+  margin-inline: 30px 50px; /* margin-left, margin-right */
+  margin-block: 50px 45px; /* margin-top, margin-bottom */
+}
+
+/*
+  selector{
+      eigenschaft: wert;
+  }
+  */
+
+div {
+  background-color: red;
+  width: 10%;
+  aspect-ratio: 16 / 9;
+}
+
+.box {
+  background-color: red;
+  width: 150px;
+  aspect-ratio: 1 / 1;
+}
+
+.content-box {
+  _box-sizing: content-box;
+  padding: 50px;
+  _margin-inline: 0 30px;
+  margin-block: 0 35px;
+  border: 5px solid green;
+}
+
+.border-box {
+  box-sizing: border-box;
+  padding: 50px;
+  border: 5px solid green;
+}
