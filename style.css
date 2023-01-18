@@ -45,3 +45,59 @@ div {
   padding: 50px;
   border: 5px solid green;
 }
+
+.text {
+  color: darkgrey;
+}
+
+main p {
+  color: black;
+}
+
+p {
+  color: darkblue;
+}
+
+p::before {
+  content: "1. ";
+  background-color: black;
+  color: white;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  padding: 2px;
+  text-align: center;
+}
+
+p::after {
+  content: " !";
+}
+
+input {
+  margin-block: 5px;
+}
+
+#check {
+  all: unset;
+}
+
+#check:checked + label {
+  color: red;
+}
+
+#check:checked + label > .checkbox {
+  background-color: green;
+}
+
+#check:checked ~ p::before {
+  background-color: red;
+}
+
+.checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  outline: 2px solid black;
+  border: 2px solid white;
+}
