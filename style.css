@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+nav ul li {
+  display: inline;
+}
+
 h1 {
   color: red;
   font-size: 32px;
@@ -20,7 +24,7 @@ h1 {
   }
   */
 
-div {
+.logo {
   background-color: red;
   width: 10%;
   aspect-ratio: 16 / 9;
@@ -82,12 +86,20 @@ input {
   all: unset;
 }
 
+#check:focus {
+  _outline: 2px solid purple;
+}
+
 #check:checked + label {
   color: red;
 }
 
 #check:checked + label > .checkbox {
   background-color: green;
+}
+
+#check:checked + label > .checkbox {
+  outline: 2px dotted green;
 }
 
 #check:checked ~ p::before {
@@ -100,4 +112,45 @@ input {
   height: 20px;
   outline: 2px solid black;
   border: 2px solid white;
+}
+
+button:focus {
+  outline: 2px dotted red;
+}
+
+div.texte {
+  background-color: lightgrey;
+  width: 200px;
+  margin-inline: auto;
+}
+span.texte {
+  background-color: lightblue;
+  display: block;
+}
+
+p.texte {
+  color: darkblue;
+}
+
+p.texte::before {
+  content: none;
+}
+
+p.texte::after {
+  content: none;
+}
+
+.inner-text {
+  background-color: transparent;
+  color: inherit;
+}
+
+p.texte a {
+  color: inherit;
+  text-decoration-color: dodgerblue;
+}
+
+p.texte a:hover {
+  color: dodgerblue;
+  text-decoration: none;
 }
